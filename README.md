@@ -3,3 +3,4 @@
   ·Trajectory Planning  
   ·Intelligence Grasping
 ## Trajectory Planning
+  [normal states](py/CONTRIBUTING.md)
