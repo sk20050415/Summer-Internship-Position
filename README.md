@@ -3,4 +3,4 @@
   ·Trajectory Planning  
   ·Intelligence Grasping
 ## Trajectory Planning
-  [normal states](py/CONTRIBUTING.md)
+  [normal states](https://github.com/sk20050415/curobo-motion/blob/main/motion_other.py)
