@@ -1,0 +1,162 @@
+solid AssimpScene
+ facet normal -1 0 0
+  outer loop
+  vertex 0 0 13
+  vertex 0 3.5 13
+  vertex 0 0 0
+  endloop
+ endfacet
+
+ facet normal -1 0 0
+  outer loop
+  vertex 0 0 0
+  vertex 0 3.5 13
+  vertex 0 3.5 0
+  endloop
+ endfacet
+
+ facet normal 0 0 1
+  outer loop
+  vertex 35 2.5 13
+  vertex 35 3.5 13
+  vertex 10 2.5 13
+  endloop
+ endfacet
+
+ facet normal 0 0 1
+  outer loop
+  vertex 10 2.5 13
+  vertex 35 3.5 13
+  vertex 0 3.5 13
+  endloop
+ endfacet
+
+ facet normal 0 0 1
+  outer loop
+  vertex 10 2.5 13
+  vertex 0 3.5 13
+  vertex 10 0 13
+  endloop
+ endfacet
+
+ facet normal 0 0 1
+  outer loop
+  vertex 10 0 13
+  vertex 0 3.5 13
+  vertex 0 0 13
+  endloop
+ endfacet
+
+ facet normal 1 0 0
+  outer loop
+  vertex 35 3.5 0
+  vertex 35 3.5 13
+  vertex 35 2.5 0
+  endloop
+ endfacet
+
+ facet normal 1 0 0
+  outer loop
+  vertex 35 2.5 0
+  vertex 35 3.5 13
+  vertex 35 2.5 13
+  endloop
+ endfacet
+
+ facet normal 0 0 -1
+  outer loop
+  vertex 35 3.5 0
+  vertex 35 2.5 0
+  vertex 10 2.5 0
+  endloop
+ endfacet
+
+ facet normal 0 0 -1
+  outer loop
+  vertex 10 0 0
+  vertex 0 0 0
+  vertex 10 2.5 0
+  endloop
+ endfacet
+
+ facet normal 0 0 -1
+  outer loop
+  vertex 10 2.5 0
+  vertex 0 0 0
+  vertex 0 3.5 0
+  endloop
+ endfacet
+
+ facet normal 0 0 -1
+  outer loop
+  vertex 10 2.5 0
+  vertex 0 3.5 0
+  vertex 35 3.5 0
+  endloop
+ endfacet
+
+ facet normal 0 1 0
+  outer loop
+  vertex 35 3.5 13
+  vertex 35 3.5 0
+  vertex 0 3.5 13
+  endloop
+ endfacet
+
+ facet normal 0 1 0
+  outer loop
+  vertex 0 3.5 13
+  vertex 35 3.5 0
+  vertex 0 3.5 0
+  endloop
+ endfacet
+
+ facet normal 0 -1 0
+  outer loop
+  vertex 35 2.5 0
+  vertex 35 2.5 13
+  vertex 10 2.5 0
+  endloop
+ endfacet
+
+ facet normal 0 -1 0
+  outer loop
+  vertex 10 2.5 0
+  vertex 35 2.5 13
+  vertex 10 2.5 13
+  endloop
+ endfacet
+
+ facet normal 1 0 0
+  outer loop
+  vertex 10 0 13
+  vertex 10 0 0
+  vertex 10 2.5 13
+  endloop
+ endfacet
+
+ facet normal 1 0 0
+  outer loop
+  vertex 10 2.5 13
+  vertex 10 0 0
+  vertex 10 2.5 0
+  endloop
+ endfacet
+
+ facet normal 0 -1 0
+  outer loop
+  vertex 10 0 0
+  vertex 10 0 13
+  vertex 0 0 0
+  endloop
+ endfacet
+
+ facet normal 0 -1 0
+  outer loop
+  vertex 0 0 0
+  vertex 10 0 13
+  vertex 0 0 13
+  endloop
+ endfacet
+
+endsolid AssimpScene

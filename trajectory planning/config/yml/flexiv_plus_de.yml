@@ -1,0 +1,210 @@
+robot_cfg:
+  kinematics:
+    usd_path: "home/yangfan/curobo/src/curobo/content/assets/robot/flexiv_description/flexiv_grav_plus.usd"
+    usd_robot_root: "/robot"
+    isaac_usd_path: ""
+    usd_flip_joints: {}
+    usd_flip_joint_limits: []
+
+    urdf_path: "robot/flexiv_description/flexiv_grav_plus.urdf"
+    asset_root_path: "robot/flexiv_description"
+    
+    base_link: "base_link"
+    ee_link: "tcp"
+    link_names: null
+    lock_joints: null
+    extra_links: null
+
+    
+    collision_link_names:
+      [       
+        "base_link",
+        "link1",
+        "link2",
+        "link3",
+        "link4",
+        "link5",
+        "link6",
+        "link7",
+        "base_hand",
+        "left_finger_mount",
+        "left_finger_tip",
+        "right_finger_mount",
+        "right_finger_tip",
+        "left_finger_plus",
+        "right_finger_plus",
+        "attached_object",
+      ]      
+    collision_spheres:
+      base_link:
+        - "center": [0.0, 0.0, 0.081]
+          "radius": 0.07
+      link1:
+        - "center": [-0.0, 0.0, 0.063]
+          "radius": 0.07
+        - "center": [0.0, -0.025, 0.223]
+          "radius": 0.05
+        - "center": [0.001, -0.014, 0.103]
+          "radius": 0.06
+        - "center": [0.0, -0.022, 0.176]
+          "radius": 0.05
+      link2:
+        - "center": [-0.0, 0.049, 0.0]
+          "radius": 0.055
+        - "center": [0.0, 0.036, 0.139]
+          "radius": 0.06
+        - "center": [0.0, 0.043, 0.068]
+          "radius": 0.05
+      link3:
+        - "center": [0.0, -0.0, 0.045]
+          "radius": 0.05
+        - "center": [-0.014, 0.016, 0.186]
+          "radius": 0.05
+        - "center": [-0.004, 0.009, 0.104]
+          "radius": 0.05
+      link4:
+        - "center": [0.0, 0.05, 0.0]
+          "radius": 0.05
+        - "center": [-0.019, 0.026, 0.138]
+          "radius": 0.05
+        - "center": [-0.012, 0.038, 0.069]
+          "radius": 0.05
+      link5:
+        - "center": [-0.001, 0.0, 0.044]
+          "radius": 0.05
+        - "center": [0.003, -0.024, 0.184]
+          "radius": 0.05
+        - "center": [0.001, -0.013, 0.108]
+          "radius": 0.05
+      link6:
+        - "center": [-0.001, 0.043, 0.0]
+          "radius": 0.045
+        - "center": [-0.002, 0.077, 0.107]
+          "radius": 0.045
+        - "center": [0.009, 0.05, 0.052]
+          "radius": 0.04
+        - "center": [0.033, 0.066, 0.11]
+          "radius": 0.04
+      link7:
+        - "center": [0.0, 0.0, 0.034]
+          "radius": 0.04
+      base_hand:
+        - "center": [-0.0, -0.0, 0.034]
+          "radius": 0.04
+      left_finger_mount:
+        - "center": [-0.0, 0.001, 0.004]
+          "radius": 0.008
+        - "center": [-0.0, 0.008, 0.016]
+          "radius": 0.007
+      left_finger_tip:
+        - "center": [-0.0, -0.0, 0.005]
+          "radius": 0.007
+        - "center": [-0.0, 0.009, 0.007]
+          "radius": 0.006
+        - "center": [-0.0, 0.008, 0.016]
+          "radius": 0.006
+        - "center": [-0.0, 0.009, 0.027]
+          "radius": 0.006
+      left_finger_plus:
+        - "center": [0.008, -0.001, 0.004]
+          "radius": 0.002
+        - "center": [0.002, -0.001, 0.004]
+          "radius": 0.002
+        
+      right_finger_mount:
+        - "center": [0.0, 0.0, 0.007]
+          "radius": 0.008
+        - "center": [0.0, 0.01, 0.014]
+          "radius": 0.008
+      right_finger_tip:
+        - "center": [-0.002, 0.0, 0.003]
+          "radius": 0.008
+        - "center": [-0.001, 0.008, 0.006]
+          "radius": 0.006
+        - "center": [-0.0, 0.009, 0.016]
+          "radius": 0.006
+        - "center": [-0.001, 0.008, 0.023]
+          "radius": 0.006
+      right_finger_plus:
+        - "center": [0.011, -0.001, 0.004]
+          "radius": 0.002
+        - "center": [0.004, -0.001, 0.004]
+          "radius": 0.002
+      
+          
+    collision_sphere_buffer: 0.005
+    extra_collision_spheres: {"attached_object": 4}
+    self_collision_ignore: 
+      { 
+        "base_link": ["link1", "link2", "link3", "link4"],
+        "link1": ["link2", "link3", "link4"],
+        "link2": ["link3", "link4", "link5"],
+        "link3": ["link4", "link5", "link6", "link7"],
+        "link4": ["link5", "link6", "link7"],
+        "link5": ["link6", "base_hand"],
+        "link6": ["link7", "base_hand","attached_object"],
+        "link7": ["base_hand","attached_object"],
+        "base_hand": [ "left_finger_mount", "left_finger_tip", "right_finger_mount", "right_finger_tip","left_finger_plus","right_finger_plus","attached_object"],
+        "left_finger_mount": ["left_finger_tip", "right_finger_mount", "right_finger_tip","left_finger_plus","right_finger_plus","attached_object"],
+        "left_finger_tip": ["right_finger_mount", "right_finger_tip","left_finger_plus","right_finger_plus","attached_object"],
+        "left_finger_plus": ["right_finger_mount", "right_finger_tip","right_finger_plus","attached_object"],
+        "right_finger_mount": ["right_finger_tip","right_finger_plus","attached_object"],
+        "right_finger_tip": ["attached_object","right_finger_plus"],
+        "right_finger_plus": ["attached_object"],
+      }      
+    self_collision_buffer: 
+      {
+        "base_link": 0.0,
+        "link1": 0.0, 
+        "link2": 0.0,
+        "link3": 0.0,
+        "link4": 0.0,
+        "link5": 0.0,
+        "link6": 0.0,
+        "link7": 0.0,
+        "base_hand": 0.0,
+        "left_finger_mount": 0.0,
+        "left_finger_tip": 0.01,
+        "right_finger_mount": 0.0,
+        "right_finger_tip": 0.01,
+        "left_finger_plus": 0.01,
+        "right_finger_plus": 0.01,
+        "attached_object": 0.0,
+      }
+    use_global_cumul: True
+    mesh_link_names: 
+      [        
+        "base_link",
+        "link1",
+        "link2",
+        "link3",
+        "link4",
+        "link5",
+        "link6",
+        "link7",
+        "base_hand",
+        "left_outer_bar",
+        "left_finger_mount",
+        "left_finger_tip",
+        "right_outer_bar",
+        "right_finger_mount",
+        "right_finger_tip",
+        "left_finger_plus",
+        "right_finger_plus",
+        "attached_object",
+      ]          
+    lock_joints: {"left_outer_knuckle_joint": 0.01, "right_outer_knuckle_joint": 0.01}
+    extra_links: {"attached_object":{"parent_link_name": "base_hand" , 
+    "link_name": "attached_object", "fixed_transform": [0,0,0,1,0,0,0], "joint_type":"FIXED",
+    "joint_name": "attach_joint" }}
+    external_asset_path: null # Use this to add path for externally located assets/robot folder.
+
+    cspace:
+      joint_names: ["joint1","joint2","joint3","joint4","joint5","joint6","joint7",
+      "left_outer_knuckle_joint",
+      "right_outer_knuckle_joint"] 
+      retract_config: [0.0, -0.2, 0.0, 0.57, 0.0, 0.2, 0.0, 0.0, 0.0]
+      null_space_weight: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+      cspace_distance_weight: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+      max_jerk: 500.0
+      max_acceleration: 15.0
