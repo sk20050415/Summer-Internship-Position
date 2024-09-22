@@ -75,4 +75,4 @@ During my reimplementation of this part, the "nanosam" part have been successful
 Regarding the "foundationpose" part, you can follow the ["Env setup option1 docker"](https://github.com/NVlabs/FoundationPose) to try finishing the setup of the environment also in the virtual environment named "base". However, it seems that some trouble exists in this computer's nvidia settings. You can input "bash build_all.sh" to read the error.
 
 # Identification and Grasping of Red and Green Blocks
-In this part, we use zed camera to identify the location and the color of the blocks and try to put the green block on the red block. You can activate the base called "motion113" and execute the [code]() to reimplement.
+In this part, we use zed camera to identify the location and the color of the blocks and try to put the green block on the red block. You can activate the virtual environment  called "motion113" and execute the [code]() to reimplement.
