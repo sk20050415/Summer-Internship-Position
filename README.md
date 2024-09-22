@@ -1,4 +1,4 @@
-# TPIG
+# Vision-based robotic arm trajectory planning and intelligent grasping
 ## Contents
 - [Install](#install)
 - [Simulation](#simulation)
@@ -68,3 +68,6 @@ The paper [GPT4Vision-Robot-Manipulation-Prompts](https://github.com/microsoft/G
 
 1. Install openAI and ZED SDK.
 2. Run **comtest.py** to recognize the image and apply correct robot actions (**robot_actions.py**). There are six types of grasping scenarios in total.
+
+# 3D visual image segmentation and pose estimation in grasping applications
+please read the [](https://github.com/AdventurerDXC/SJTUME24-gradproject)
