@@ -70,6 +70,9 @@ The paper [GPT4Vision-Robot-Manipulation-Prompts](https://github.com/microsoft/G
 2. Run **comtest.py** to recognize the image and apply correct robot actions (**robot_actions.py**). There are six types of grasping scenarios in total.
 
 # 3D visual image segmentation and pose estimation in grasping applications
-please read the [Adventure](https://github.com/AdventurerDXC/SJTUME24-gradproject).  
+Please read the [Adventure](https://github.com/AdventurerDXC/SJTUME24-gradproject).  
 During my reimplementation of this part, the "nanosam" part have been successfully reimplement. To reimplement this part, you can enter the Terminal of the computer and then input "conda activate base" to enter the virtual environment, and then you can try the examples according to [nanosam](https://github.com/NVIDIA-AI-IOT/nanosam).  
-Regarding the "foundationpose" part, you can follow the ["Env setup option1 docker"](https://github.com/NVlabs/FoundationPose) to try finishing the setup of the environment also in the virtual environment named "base". However, it seems that some trouble exists in this computer's nvidia settings. You can input "bash build_all.sh" to read the error. 
+Regarding the "foundationpose" part, you can follow the ["Env setup option1 docker"](https://github.com/NVlabs/FoundationPose) to try finishing the setup of the environment also in the virtual environment named "base". However, it seems that some trouble exists in this computer's nvidia settings. You can input "bash build_all.sh" to read the error.
+
+# Identification and Grasping of Red and Green Blocks
+In this part, we use zed camera to identify the location and the color of the blocks and try to put the green block on the red block. You can activate the base called "motion113" and execute the [code]() to reimplement 
